@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
+@font-face {
+  font-family: GodoM;
+  src: url('./assets/fonts/GodoM.woff2') format('woff2'),
+    url('./assets/fonts/GodoM.woff') format('woff'),
+    url('./assets/fonts/GodoM.ttf') format('truetype');
+}
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: GodoM, sans-serif;
+  }
+}

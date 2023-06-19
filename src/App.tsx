@@ -1,20 +1,13 @@
-import { useState } from 'react';
-import Banggyul from '@/assets/projectSpriteImg/Banggyul.png';
-import BMTI from '@/assets/projectSpriteImg/BMTI.png';
-import react from '@/assets/stackIcon/React.svg';
-import banggyulLogo from '@/assets/captionLogo/banggyul-logo.svg';
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './pages/Layout';
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="flex justify-center items-center bg-black">
-      <h1 className="text-3xl font-bold text-blue-600">
-        Install & Setup Vite + React + Typescript + Tailwind CSS 3
-        <img src={Banggyul} />
-        <img src={react} />
-        <img src={banggyulLogo} />
-        <img src={BMTI} />
-      </h1>
+    <div className="min-h-screen bg-fixed bg-gradient-to-t from-[#1C2837] to-[#050608] text-primary">
+      <BrowserRouter>
+        <Layout>
+          <div>hi</div>
+        </Layout>
+      </BrowserRouter>
     </div>
   );
 }
