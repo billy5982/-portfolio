@@ -20,12 +20,6 @@ const $sun = 40,
   $jupiterPl = 18,
   $saturnOrb = 440,
   $saturnPl = 12,
-  $uranusOrb = 520,
-  $uranusPl = 10,
-  $neptuneOrb = 630,
-  $neptunePl = 10,
-  $plutoOrb = 780,
-  $plutoPl = 3,
   $asteroidsBeltOrb = 300,
   $asteroidsBeltPl = 210,
   $yearInSecond = 30; // 1 Earth year = 30 sec
@@ -110,6 +104,22 @@ export const SolarSyst = styled.div<SolarSystFunc>`
       box-shadow: 0 0 10px 2px rgba(255, 107, 0, 0.4), 0 0 22px 11px rgba(255, 203, 0, 0.13);
     `}
   }
+
+  .mars {
+    height: ${$marsOrb};
+    width: ${$marsOrb};
+    margin-top: ${convertPx(-$marsOrb / 2)};
+    margin-left: ${convertPx(-$marsOrb / 2)};
+    animation: ${orb} ${revolution(687)} linear infinite;
+    &:before {
+      height: ${convertPx($marsPl)};
+      width: ${convertPx($marsPl)};
+      background: #cf3921;
+      margin-top: ${convertPx(-$marsPl / 2)};
+      margin-left: ${convertPx(-$marsPl / 2)};
+    }
+  }
+
   .mercury {
     ${() => css`
       height: ${convertPx($mercuryOrb)};

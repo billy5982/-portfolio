@@ -8,6 +8,7 @@ const Background = () => {
       <div className="mercury" />
       <div className="venus" />
       <div className="earth" />
+      <div className="mars" />
       <div className="jupiter" />
       <div className="saturn" />
       <div className="asteroids-belt" />
