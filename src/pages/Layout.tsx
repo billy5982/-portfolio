@@ -1,14 +1,15 @@
+import Background from '@/components/Background/Background';
 import { ReactNode } from 'react';
 
 interface LayoutProps {
-  children: ReactNode;
+  routes: ReactNode;
 }
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ routes }: LayoutProps) => {
   return (
     <div className="h-full">
-      {children}
-      <> 솔라 시스템</>
+      <Background />
+      <div>{routes}</div>
     </div>
   );
 };

@@ -1,14 +1,11 @@
 import { BrowserRouter } from 'react-router-dom';
-import Layout from './pages/Layout';
+import Layout from '@/pages/Layout';
+import Routes from '@/routes';
 function App() {
   return (
-    <div className="min-h-screen bg-fixed bg-gradient-to-t from-[#1C2837] to-[#050608] text-primary">
-      <BrowserRouter>
-        <Layout>
-          <div>hi</div>
-        </Layout>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Layout routes={<Routes />} />
+    </BrowserRouter>
   );
 }
 
