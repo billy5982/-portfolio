@@ -48,7 +48,7 @@ const MainPage = () => {
         modules={[Mousewheel, Pagination, HashNavigation]}
         onSlideChange={slideChange}
         initialSlide={0}
-        className="mySwiper h-full w-full pt-5 md:pt-12"
+        className="mySwiper h-full w-full"
       >
         <SwiperSlide className="w-full h-full" data-hash="Home">
           Intro

@@ -7,7 +7,7 @@ const Nav = ({ moveFn, currentSlideIndex }: NavProps) => {
   const navMenu = ['Home', 'About', 'Project'];
 
   return (
-    <nav className="fixed w-full z-50 text-[1.5vh] md:text-[2vh]">
+    <nav className=" w-full z-50 text-[1.5vmax] md:text-[2vmax]">
       <ul className="flex w-full gap-[4vw] md:gap-20 md:justify-start">
         {navMenu.map((text, idx) => (
           <li
