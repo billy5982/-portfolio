@@ -9,7 +9,7 @@ const Layout = ({ routes }: LayoutProps) => {
   return (
     <div className="h-full">
       <Background />
-      <div>{routes}</div>
+      {routes}
     </div>
   );
 };
