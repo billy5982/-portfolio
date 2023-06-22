@@ -7,6 +7,9 @@ import { resolve } from 'path';
 export default defineConfig({
   plugins: [react(), svgr()],
   resolve: {
-    alias: [{ find: '@', replacement: `${resolve()}/src` }],
+    alias: [
+      { find: '@stackIcon', replacement: `${resolve()}/src/assets/stackIcon` },
+      { find: '@', replacement: `${resolve()}/src` },
+    ],
   },
 });
