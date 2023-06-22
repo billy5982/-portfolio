@@ -14,6 +14,26 @@ module.exports = {
       fontFamily: {
         godo: ['GodoM', 'sans-serif'],
       },
+      fontSize: {
+        mainTitle: '2.7vmax',
+        subTitle: '2.4vmax',
+        primaryTitle: '2.2vmax',
+        descSize: '1.75max',
+        extraDesc: '1.5max',
+      },
+      keyframes: {
+        rotate90: {
+          from: {
+            transfrom: 'rotate(0)',
+          },
+          to: {
+            transfrom: 'rotate(90)',
+          },
+        },
+      },
+      animation: {
+        rotateArror: 'rotate90 1s linear ',
+      },
     },
   },
   plugins: [],

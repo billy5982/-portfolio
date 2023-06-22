@@ -5,6 +5,7 @@ import 'swiper/css/pagination';
 import { useEffect, useRef, useState } from 'react';
 import Nav from '@/components/Common/Nav';
 import { Swiper as SwiperType } from 'swiper/types';
+import IntroPage from './IntroPage';
 
 const MainPage = () => {
   const swiperRef = useRef<SwiperRef | null>(null);
@@ -30,6 +31,7 @@ const MainPage = () => {
   const slideChange = (swiper: SwiperType) => {
     setCurrentIdx(swiper.activeIndex >= 2 ? 2 : swiper.activeIndex);
   };
+
   return (
     <div className="absolute top-0 left-0 h-full w-full p-5 min-w-xs md:p-12">
       <Nav moveFn={goToSlide} currentSlideIndex={currentIdx} />
@@ -50,8 +52,8 @@ const MainPage = () => {
         initialSlide={0}
         className="mySwiper h-full w-full"
       >
-        <SwiperSlide className="w-full h-full" data-hash="Home">
-          Intro
+        <SwiperSlide data-hash="Home">
+          <IntroPage />
         </SwiperSlide>
         <SwiperSlide className="w-full h-full" data-hash="About">
           About
