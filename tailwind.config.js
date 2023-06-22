@@ -15,11 +15,18 @@ module.exports = {
         godo: ['GodoM', 'sans-serif'],
       },
       fontSize: {
-        mainTitle: '2.7vmax',
-        subTitle: '2.4vmax',
-        primaryTitle: '2.2vmax',
-        descSize: '1.75vmax',
-        extraDesc: '1.5vmax',
+        mainTitle: '3vh',
+        subTitle: '2.4vh',
+        primaryTitle: '2.2vh',
+        descSize: '1.75vh',
+        extraDesc: '1.5vh',
+        stack: '1.3vw',
+      },
+    },
+    keyframes: {
+      fadein: {
+        '0%': { opacity: 0, transform: 'translate3d(0, 50%, 0)' },
+        '100%': { opacity: 1, transform: 'translateZ(0)' },
       },
     },
   },
