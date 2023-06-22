@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 import Nav from '@/components/Common/Nav';
 import { Swiper as SwiperType } from 'swiper/types';
 import IntroPage from './IntroPage';
+import AboutPage from './AboutPage';
 
 const MainPage = () => {
   const swiperRef = useRef<SwiperRef | null>(null);
@@ -55,8 +56,8 @@ const MainPage = () => {
         <SwiperSlide data-hash="Home">
           <IntroPage />
         </SwiperSlide>
-        <SwiperSlide className="w-full h-full" data-hash="About">
-          About
+        <SwiperSlide data-hash="About">
+          <AboutPage />
         </SwiperSlide>
         <SwiperSlide className="w-full h-full" data-hash="Project">
           Project1
