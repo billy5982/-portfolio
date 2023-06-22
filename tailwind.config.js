@@ -21,19 +21,6 @@ module.exports = {
         descSize: '1.75max',
         extraDesc: '1.5max',
       },
-      keyframes: {
-        rotate90: {
-          from: {
-            transfrom: 'rotate(0)',
-          },
-          to: {
-            transfrom: 'rotate(90)',
-          },
-        },
-      },
-      animation: {
-        rotateArror: 'rotate90 1s linear ',
-      },
     },
   },
   plugins: [],
