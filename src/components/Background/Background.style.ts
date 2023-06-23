@@ -1,5 +1,6 @@
 import styled, { css, keyframes } from 'styled-components';
-
+// Code by Malik Dellidj (@kowlor)
+// From: https://codepen.io/kowlor/pen/ZYYQoy
 interface SolarSystFunc {
   starnum: number;
   maxarea: number;
