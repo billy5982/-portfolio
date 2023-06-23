@@ -1,7 +1,10 @@
+import './sprite.css';
+
 interface AnimateProps {
   steps?: number;
   url: string;
 }
+
 //  originX 값 미리 작성해놓기?
 const SpriteAnimate = ({ url, steps }: AnimateProps) => {
   return (
@@ -17,10 +20,11 @@ const SpriteAnimate = ({ url, steps }: AnimateProps) => {
       <div
         className={`absolute top-0 left-0 right-0 bottom-0 
           bg-no-repeat bg-[0_100%] bg-[length:auto_100%]
-          ${steps && `animate-[sprite_3.5s_steps(6)_infinite]`}
+
         `}
         style={{
           backgroundImage: `url(${url})`,
+          animation: `sprite 3.5s steps(${steps}) infinite`,
         }}
       ></div>
     </div>
