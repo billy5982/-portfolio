@@ -59,9 +59,7 @@ const MainPage = () => {
         <SwiperSlide data-hash="About">
           <AboutPage />
         </SwiperSlide>
-        <SwiperSlide className="w-full h-full" data-hash="Project">
-          Project1
-        </SwiperSlide>
+        <SwiperSlide className="w-full h-full" data-hash="Project"></SwiperSlide>
         <SwiperSlide className="w-full h-full" data-hash="Project">
           Project2
         </SwiperSlide>

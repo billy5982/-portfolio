@@ -29,6 +29,14 @@ module.exports = {
         '0%': { opacity: 0, transform: 'translate3d(0, 50%, 0)' },
         '100%': { opacity: 1, transform: 'translateZ(0)' },
       },
+      sprite: {
+        from: {
+          'background-position': '0% 0',
+        },
+        to: {
+          'background-position': '100% 0',
+        },
+      },
     },
   },
   plugins: [],
