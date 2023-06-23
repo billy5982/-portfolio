@@ -26,7 +26,7 @@ const ProjectPage = ({ content }: ProjectType) => {
         <ProjectMain content={content[0]} />
       </SwiperSlide>
       <SwiperSlide className="h-full w-full">
-        <ProjectDesc />
+        <ProjectDesc content={content[1]} />
       </SwiperSlide>
     </Swiper>
   );

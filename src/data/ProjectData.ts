@@ -22,9 +22,39 @@ export const Indego = [
       main: IndeGo,
     },
   },
-  {},
+  {
+    imgContainer: {
+      src: IndeGo,
+      steps: 4,
+    },
+    PageDesc: [
+      {
+        title: '메인 페이지',
+        content: [
+          'Github 로그인을 통한 간편 회원가입',
+          '스택 선택을 통한 랜덤 면접 진행',
+          '검색창을 이용한 스택 추가',
+        ],
+      },
+      {
+        title: '인터뷰 페이지',
+        content: ['실시간 타이머를 통한 실제 면접 압박감 및 유사 경험 제공'],
+      },
+      {
+        title: '결과 페이지',
+        content: ['면접 진행 후 면접에 대한 답변 확인 가능'],
+      },
+      {
+        title: '마이페이지',
+        content: ['진행했던 면접에 대한 답변 히스토리 제공', '문제 재도전을 통한 이해도 향상'],
+      },
+    ],
+  },
 ];
 export type ProjectDataType = typeof Indego;
 export type ProjectPreviewType = (typeof Indego)[0];
 export type ImgLinkType = (typeof Indego)[0]['imgLink'];
 export type PreviewType = (typeof Indego)[0]['projectPreview'];
+export type ProjectDetail = (typeof Indego)[1];
+export type ProjectDetailImg = (typeof Indego)[1]['imgContainer'];
+export type ProjectDetailDesc = (typeof Indego)[1]['PageDesc'];
