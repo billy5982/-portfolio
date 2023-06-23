@@ -10,6 +10,7 @@ module.exports = {
         logoBg: '#6919ff',
         caption1: '#F7C95F',
         caption2: '#91DD78',
+        captionbg: '#232425',
       },
       fontFamily: {
         godo: ['GodoM', 'sans-serif'],
