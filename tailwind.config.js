@@ -21,7 +21,7 @@ module.exports = {
         primaryTitle: '2.2vh',
         descSize: '1.75vh',
         extraDesc: '1.5vh',
-        stack: '1.3vw',
+        stack: '1.3vh',
       },
     },
     keyframes: {
