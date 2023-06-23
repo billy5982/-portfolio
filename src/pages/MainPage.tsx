@@ -7,6 +7,10 @@ import Nav from '@/components/Common/Nav';
 import { Swiper as SwiperType } from 'swiper/types';
 import IntroPage from './IntroPage';
 import AboutPage from './AboutPage';
+import ProjectPage from './ProjectPage';
+import './swiper.css';
+
+import { Indego } from '@/data/ProjectData';
 
 const MainPage = () => {
   const swiperRef = useRef<SwiperRef | null>(null);
@@ -59,7 +63,9 @@ const MainPage = () => {
         <SwiperSlide data-hash="About">
           <AboutPage />
         </SwiperSlide>
-        <SwiperSlide className="w-full h-full" data-hash="Project"></SwiperSlide>
+        <SwiperSlide data-hash="Project">
+          <ProjectPage content={Indego} />
+        </SwiperSlide>
         <SwiperSlide className="w-full h-full" data-hash="Project">
           Project2
         </SwiperSlide>
