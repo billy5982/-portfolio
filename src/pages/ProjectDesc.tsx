@@ -17,7 +17,7 @@ const ProjectDesc = ({ content, vertical }: DescProps) => {
         )}
         {/* vertical 넣어주기 */}
         {content.imgContainer && vertical && (
-          <div className="w-[25%] md:w-[50%] flex justify-center relative">
+          <div className="w-[35%] md:w-[40%] flex justify-center relative">
             <SpriteAnimateVerti url={content.imgContainer.src} steps={content.imgContainer.steps} />
           </div>
         )}

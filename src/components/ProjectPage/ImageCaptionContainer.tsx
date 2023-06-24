@@ -19,7 +19,7 @@ const ImageCaptionContainer = ({ data, vertical }: CaptionProps) => {
             <LinkContainer src={data.docs[0]} desc={data.docs[1]} href={data.docs[2]} />
           </div>
           {vertical ? (
-            <div className="w-[25%] md:w-[50%] flex m-[auto]">
+            <div className="w-[40%] flex mx-[auto]">
               <SpriteAnimateVerti url={data.main} />
             </div>
           ) : (
