@@ -12,7 +12,7 @@ const SpriteAnimate = ({ url, steps }: AnimateProps) => {
       className={`
         relative 
         before:block
-        w-[50%] 
+        w-[100%] 
         md:w-full
         before:pt-[69.23%] 
         `}

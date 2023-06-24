@@ -8,9 +8,12 @@ import BanggyulSprite from '@/assets/projectSpriteImg/Banggyul.png';
 
 import GoodFELogo from '@/assets/captionLogo/goodfe-small.svg';
 import GoodFESprite from '@/assets/projectSpriteImg/GoodFE.png';
+import BmtiLogo from '@/assets/captionLogo/bmti-small.svg';
+import BmtiSprite from '@/assets/projectSpriteImg/BMTI.png';
 
 import TeamtodoSprite from '@/assets/projectSpriteImg/TeamTodo.png';
 import StackOverFlowImg from '@/assets/projectSpriteImg/StackoverFlow.png';
+
 export const Indego = [
   {
     projectPreview: {
@@ -178,6 +181,51 @@ export const GoodFE = [
       {
         title: '롤링 페이퍼 조회 페이지(VsCodeStates)',
         content: ['작성된 롤링페이퍼 열람 가능'],
+      },
+    ],
+  },
+];
+
+export const Bmti = [
+  {
+    projectPreview: {
+      caption: '사용자의 성향을 분석하여 칵테일을 추천해주는 서비스',
+      title: 'BMTI',
+      subDesc:
+        '칵테일바에서 어떤 칵테일을 마실 지 몰라 고민하셨나요? 혹은 내 성향과 맞는 칵테일을 찾고 계신가요? 간단한 설문을 통해 나와 맞는 칵테일을 찾아보세요!',
+      mainDesc:
+        'BMTI는 사용자의 취향을 분석하여 맞춤 칵테일을 추천하는 서비스입니다. 설문조사를 통해 사용자의 선호도와 취향을 파악하고, 그에 맞게 다양한 칵테일을 추천해드립니다.',
+      Techs: ['React', 'JavaScript', 'Styled-component'],
+      Roles: ['Frontend-Developer'],
+    },
+    imgLink: {
+      github: [Github, 'github', 'https://github.com/Quick-Project/BMTI-DLink '],
+      project: [BmtiLogo, 'BMTI', 'https://quick-project.github.io/BMTI-DLink/'],
+      docs: [Docs, 'Docs', 'https://bit.ly/3SCzzjQ'],
+      main: BmtiSprite,
+    },
+  },
+  {
+    imgContainer: {
+      src: BmtiSprite,
+      steps: 5,
+    },
+    PageDesc: [
+      {
+        title: '메인 페이지',
+        content: ['버튼을 이용한 설문조사 페이지 이동'],
+      },
+      {
+        title: '설문조사 페이지',
+        content: ['진행도 확인을 위한 상단 Progress Bar 제공'],
+      },
+      {
+        title: '결과 페이지',
+        content: [
+          '취향에 맞는 칵테일 추천 및 유래 제공',
+          '사용자 취향 수치화 및 분석 결과 제공',
+          '프로젝트 홍보 및 칵테일 정보 공유를 위한 SNS 공유 기능 제공',
+        ],
       },
     ],
   },

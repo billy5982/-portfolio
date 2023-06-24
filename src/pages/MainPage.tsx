@@ -10,7 +10,7 @@ import AboutPage from './AboutPage';
 import ProjectPage from './ProjectPage';
 import './swiper.css';
 
-import { Banggyul, GoodFE, Indego, StackOver } from '@/data/ProjectData';
+import { Banggyul, Bmti, GoodFE, Indego, StackOver } from '@/data/ProjectData';
 import SideProjectPage from './SideProjectPage';
 import { TeamTodo } from '@/data/ProjectData';
 
@@ -73,6 +73,9 @@ const MainPage = () => {
         </SwiperSlide>
         <SwiperSlide className="w-full h-full" data-hash="Project3">
           <ProjectPage content={GoodFE} />
+        </SwiperSlide>
+        <SwiperSlide className="w-full h-full" data-hash="Project4">
+          <ProjectPage content={Bmti} vertical={true} />
         </SwiperSlide>
         <SwiperSlide className="w-full h-full" data-hash="Side-Project">
           <SideProjectPage content1={TeamTodo} content2={StackOver} />

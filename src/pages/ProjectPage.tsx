@@ -11,8 +11,9 @@ import { ProjectDataType } from '@/data/ProjectData';
 
 interface ProjectType {
   content: ProjectDataType;
+  vertical?: boolean;
 }
-const ProjectPage = ({ content }: ProjectType) => {
+const ProjectPage = ({ content, vertical }: ProjectType) => {
   return (
     <Swiper
       pagination={{
@@ -23,10 +24,10 @@ const ProjectPage = ({ content }: ProjectType) => {
       className="h-full w-full "
     >
       <SwiperSlide className="flex w-full h-full">
-        <ProjectMain content={content[0]} />
+        <ProjectMain content={content[0]} vertical={vertical ? true : false} />
       </SwiperSlide>
       <SwiperSlide className="h-full w-full">
-        <ProjectDesc content={content[1]} />
+        <ProjectDesc content={content[1]} vertical={vertical ? true : false} />
       </SwiperSlide>
     </Swiper>
   );
