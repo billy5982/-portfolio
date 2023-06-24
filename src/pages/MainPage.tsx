@@ -10,7 +10,9 @@ import AboutPage from './AboutPage';
 import ProjectPage from './ProjectPage';
 import './swiper.css';
 
-import { Indego } from '@/data/ProjectData';
+import { Banggyul, GoodFE, Indego, StackOver } from '@/data/ProjectData';
+import SideProjectPage from './SideProjectPage';
+import { TeamTodo } from '@/data/ProjectData';
 
 const MainPage = () => {
   const swiperRef = useRef<SwiperRef | null>(null);
@@ -63,14 +65,17 @@ const MainPage = () => {
         <SwiperSlide data-hash="About">
           <AboutPage />
         </SwiperSlide>
-        <SwiperSlide data-hash="Project">
+        <SwiperSlide data-hash="Project1">
           <ProjectPage content={Indego} />
         </SwiperSlide>
-        <SwiperSlide className="w-full h-full" data-hash="Project">
-          Project2
+        <SwiperSlide className="w-full h-full" data-hash="Project2">
+          <ProjectPage content={Banggyul} />
         </SwiperSlide>
-        <SwiperSlide className="w-full h-full" data-hash="Project">
-          Project3
+        <SwiperSlide className="w-full h-full" data-hash="Project3">
+          <ProjectPage content={GoodFE} />
+        </SwiperSlide>
+        <SwiperSlide className="w-full h-full" data-hash="Side-Project">
+          <SideProjectPage content1={TeamTodo} content2={StackOver} />
         </SwiperSlide>
       </Swiper>
     </div>
