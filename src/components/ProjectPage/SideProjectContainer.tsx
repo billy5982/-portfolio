@@ -10,7 +10,7 @@ interface SideProjectProps {
 const SideProjectContainer = ({ content }: SideProjectProps) => {
   const imgLink = content.imgLink;
   return (
-    <div className="w-[90%] md:w-[45%] flex-col text-descSize ">
+    <div className="w-[90%] md:w-[45%] flex flex-col text-descSize h-full justify-around md:justify-center">
       <h3 className="text-primaryTitle">{content.projectPreview.title}</h3>
       <div className="flex flex-wrap gap-2 justify-start md:justify-start">
         {imgLink.github.length > 0 && (
@@ -31,11 +31,11 @@ const SideProjectContainer = ({ content }: SideProjectProps) => {
           />
         )}
       </div>
-      <div className="flex justify-center relative">
+      <div className="flex justify-center relative w-[40%] md:w-full">
         <SpriteAnimate url={imgLink.main} steps={imgLink.steps} />
       </div>
       <p className="mb-2">{content.projectPreview.mainDesc}</p>
-      <div>
+      <div className="mb-2">
         <h3 className="text-primaryTitle md:text-subTitle">TECH STACK</h3>
         <div className="flex flex-wrap gap-[1vh] md:gap-[2.5vh]">
           {content.projectPreview.Techs.map((el, idx) => (
