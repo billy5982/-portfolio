@@ -7,7 +7,7 @@ interface PreviewProps {
 
 const ProjectPreviewContainer = ({ data }: PreviewProps) => {
   return (
-    <div className="flex flex-col gap-[2vh] text-descSize leading-normal mt-[1vh] md:mt-0">
+    <div className="flex flex-col gap-[1vh] md:gap-[2vh] text-descSize leading-normal mt-[1vh] md:mt-0">
       <p className="text-desc">{data?.caption}</p>
       <h3 className="text-mainTitle">{data?.title}</h3>
       <p className="text-desc">{data?.subDesc}</p>

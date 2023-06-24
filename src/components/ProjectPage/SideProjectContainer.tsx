@@ -34,8 +34,8 @@ const SideProjectContainer = ({ content }: SideProjectProps) => {
       <div className="flex justify-center relative w-[40%] md:w-full">
         <SpriteAnimate url={imgLink.main} steps={imgLink.steps} />
       </div>
-      <p className="mb-2">{content.projectPreview.mainDesc}</p>
-      <div className="mb-2">
+      <p>{content.projectPreview.mainDesc}</p>
+      <div>
         <h3 className="text-primaryTitle md:text-subTitle">TECH STACK</h3>
         <div className="flex flex-wrap gap-[1vh] md:gap-[2.5vh]">
           {content.projectPreview.Techs.map((el, idx) => (

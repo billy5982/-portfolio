@@ -13,7 +13,7 @@ const ImageCaptionContainer = ({ data, vertical }: CaptionProps) => {
     <div className="w-full flex flex-col gap-3">
       {data && (
         <>
-          <div className="flex flex-row gap-3 flex-wrap justify-end md:justify-start">
+          <div className="flex flex-row gap-3 flex-wrap justify-center md:justify-start">
             <LinkContainer src={data.github[0]} desc={data.github[1]} href={data.github[2]} />
             <LinkContainer src={data.project[0]} desc={data.project[1]} href={data.project[2]} />
             <LinkContainer src={data.docs[0]} desc={data.docs[1]} href={data.docs[2]} />
